@@ -1,0 +1,66 @@
+<div class="banner-area">
+     {% for block in section.blocks %}
+
+            <!-- 100文字前後 -->
+            <div class="banner-text-area">
+                <div class="banner-area-heading">
+                 <p id="title" class="banner-title"> {{ block.settings.title }}</p>
+                 
+                  
+                 <p id="writing" class="banner-text">
+                     {{ block.settings.writing }}
+                </p>
+             </div>
+              </div>
+
+            <div class="banner-img-area">
+                 <img src="{{ block.settings.image | img_url:"master" }}">
+                 
+              
+   </div>
+   
+{% endfor %}
+</div> 
+
+
+{% schema %}
+{
+  "name": "バナーエリア",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "バナー追加",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "題名"
+        },
+ {
+          "type": "richtext",
+          "id": "writing",
+          "default": "<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>",
+          "label": "テキスト"
+        },
+          {
+         "type": "image_picker",
+         "id": "image",
+         "label": "画像を選ぶ"
+          }
+         ]
+       }
+     ],
+  "presets": [
+       {
+         "name": "バナーエリア"
+       }
+     ]
+    }
+{% endschema %}
+
+
+
+
+

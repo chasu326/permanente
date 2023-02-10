@@ -1,0 +1,351 @@
+<section class="dropdown" id="dropdown">
+        <div class="tab_box">
+            <div class="btn_area">
+                <p class="tab_btn active"></p>
+                <p class="tab_btn"></p>
+            </div>
+          
+            <div class="panel_area">
+                <div class="tab_panel active">
+                    <div id="tab_panel_box">
+                         {% for block in section.blocks %}
+                        <div class="panel_box_car">
+                           <span id="img-span">
+                                  <div class="img-tab-box">
+                                <h4 class="series-title">{{ block.settings.car_name }}</h4>
+                               
+                                 <img class="column-img" src="{{ block.settings.kind_img | img_url: '150x' }}">
+                                  </div>
+                                </span>
+                                <ul  id="madaln-box" class="madaln-box">
+                                  <div class="madaln-overflow">
+                                 {% for link in linklists[block.settings.main_linklist].links %}
+                                 {% if link.links == blank %}
+                                <div class="nav-link-box">
+                                  <a class="nav-link" href="{{ link.url }}">
+                                    <li class="nav-item active"><p>{{link.title}}</p></li>
+                                  </a>
+                                </div>
+                                 {% endif %}
+                                {% endfor %} 
+                                  </div>
+                                </ul>
+                          
+                        </div>
+                          {% endfor %}
+                    </div>
+                </div>
+                <div class="tab_panel" id="tab_panel_item">
+                    <div id="tab_panel_box">{% render 'item-parts' %}</div>
+                </div> 
+            </div>
+        </div>
+      
+    </section>
+    
+    
+    <style>
+      
+      .dropdown {
+        max-width:1600px;
+        margin:50px auto;
+        padding:0 50px;
+      }
+      
+    #tab_panel_box {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      }
+      
+    #tab_panel_box div {
+    
+      }
+    
+    #tab_panel_box div span {
+      cursor: pointer;
+      margin: 10px;
+      }
+    
+    #tab_panel_box div ul {
+      display: none;
+      width: 100%;
+      padding:10px 0;
+      height: 100px;
+      }
+      
+    .panel_box_car {
+        position:relative; 	
+        width: calc(20%);
+        margin:10px;
+    }
+      
+      
+    #madaln-box {
+        position:absolute; 
+        list-style:none;
+        z-index: 1000;
+        left: 50%;
+        top:90%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        background: #fff;
+       border: solid 3px #f5f5f5;
+    }
+         
+/*     .madaln-overflow{
+        overflow: scroll;
+        height:100%;
+    } */
+      
+      .img-tab-box{
+        border: solid 3px #FFE000;
+        background: #fff;
+        background-image: url(https://cdn.shopify.com/s/files/1/0608/4332/7713/files/4.png?v=1652334517);
+        background-position: right 10px center;
+        background-repeat: no-repeat;
+        background-size: 13px 13px;
+      }
+      
+     .img-tab-box:hover{
+  background-color: #fff;
+  border-color: #444;
+  color: #444;
+}
+    .img-tab-box img{
+        width:20%;
+        height:auto;
+       }
+      
+     .series-title {
+       text-align:right;   
+       position: absolute;
+       top: 30%;
+       left: 50%;
+       transform: translateX(-50%);
+       -webkit-transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+       color:#1C4457;
+    }
+      
+     .series-title:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+/*       bottom: -5px; 下線の上下位置調整*/
+/*       display: inline-block; */
+/*       width: 45px; 下線の幅 */
+/*       height: 2px; /*下線の太さ */ 
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translate(-50%); /*位置調整*/
+      background-color: #44A7D6; /*下線の色*/
+     }  
+      
+      
+     .nav-link {
+        text-decoration:none;
+     }
+      
+      
+     .nav-item {
+        height:60px;
+        margin: 0 20px;
+        background:#fff;
+        color:#1C4457;
+        border-bottom: solid 1px #1C4457;   
+     }
+      
+      
+     .nav-link-box {
+    }
+      }
+      
+     .nav-item:first-child  {
+        
+      }
+      
+     .nav-item:nth-of-type(5)  {
+      }    
+      
+      
+     .nav-item p {
+       margin:0 auto;
+       text-align: center;
+       vertical-align:middle;
+     }
+      
+      
+    /*タブ実装*/
+    .tab_box .btn_area {
+        margin:0 10px;
+        display: -webkit-box;
+        display: flex;
+    }
+    
+    .tab_box .tab_btn {
+        width: 188px;
+        padding: 8px 0;
+        color:rgba(0,102,177,0.3);
+        background-color:rgba(0,102,177,0.1);
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s ease 0s;
+    }
+    
+    .tab_box .tab_btn + .tab_btn {
+        margin-left: 8px;
+    }
+    
+    .tab_box .tab_btn:hover {
+        background-color: #dce1e4;
+    }
+    
+    .tab_box .tab_btn.active {
+        background:#0066B1;
+        color:#fff;
+        opacity:1;
+    }
+    
+    .tab_box .panel_area {
+        padding: 20px;
+    }
+    
+    .tab_box .tab_panel {
+        display:none;
+    }
+    
+    .tab_box .tab_panel.active {
+        display:block;
+    }
+      
+     .catelist {
+  display: flex;
+}
+      .catelist li {
+  display: flex;
+}
+    
+    </style>
+    
+    <script>
+     // 画像クリックで出てくる
+    $(function () {
+      $('span').click(function() { 
+        if ($(this).attr('class') == 'selected') {
+          // メニュー非表示
+          $(this).removeClass('selected').next(".madaln-box").slideUp('fast');
+        } else {
+          // 表示しているメニューを閉じる
+          $('span').removeClass('selected');
+          $('.panel_box_car').removeClass('isActive');
+          $(".madaln-box").hide();
+    
+          // メニュー表示
+          $(this).addClass('selected').next(".madaln-box").slideDown('fast');
+        }    
+      });
+      
+      // マウスカーソルがメニュー上/メニュー外
+      $('span,ul').hover(function(){
+        over_flg = true;
+      }, function(){
+        over_flg = false;
+      });  
+       
+       // メニュー領域外をクリックしたらメニューを閉じる
+      //$('body').click(function() {
+        //if (over_flg == false) {
+          //$('span').removeClass('selected');
+          //$('ul').slideUp('fast');
+        //}
+      //});
+    });  
+      
+    $('.panel_box_car').on('click', function(){
+      $(this).toggleClass('isActive');
+    })
+    
+      // メニュー領域外をクリックしたらメニューを閉じる
+      //$('body').click(function() {
+        //if (over_flg == false) {
+      //$(this).removeClass('isActive');
+        //}
+      //});  
+      
+      
+      
+     // タブ切り替え
+    //$('.tab_box .tab_btn').click(function() {
+        //var index = $('.tab_box .tab_btn').index(this);
+        //$('.tab_box .tab_btn, .tab_box .tab_panel').removeClass('active');
+        //$(this).addClass('active');
+        //$('.tab_box .tab_panel').eq(index).addClass('active');
+    //});   
+    
+    
+    $(function() {
+        $('.btn_area>.tab_btn').click(function() {
+            var num = $(this).parent().children('.tab_btn').index(this);
+                $('.btn_area').each(function(){
+                $('>.tab_btn',this).removeClass('active').eq(num).addClass('active');
+            });
+            $('.tab_panel ').hide().eq(num).show();
+        }).first().click();
+    });
+       
+      
+    </script>
+    
+    
+   
+    
+    {% schema %}
+      {
+        "name": "ドロッピング",
+        "class": "collection-column",
+        "settings": [
+        ],
+        "blocks": [
+        {
+           "name": "コレクションを選択",
+           "type": "collection",
+           "settings": [
+              {
+                "type": "text",
+                "id": "car_name",
+                "default": "カテゴリー",
+                "label": "カテゴリー名"
+              },
+             {
+             "type": "image_picker",
+             "id": "kind_img",
+             "label": "画像を選ぶ"
+              },
+              {
+              "type": "link_list",
+              "id": "main_linklist",
+              "label": "メニューを選択",
+              "default": "main-menu"
+              }
+             ]
+           }
+         ],
+        "presets": [
+           {
+             "name": "ドロッピング"
+           }
+         ]
+        }
+    {% endschema %}
+    
+    {% stylesheet %}
+    {% endstylesheet %}
+    
+    {% javascript %}
+    {% endjavascript %}
+    
+    
+    

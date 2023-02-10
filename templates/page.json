@@ -1,0 +1,85 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "16644592892d15f427": {
+      "type": "collection-list",
+      "blocks": {
+        "16644592890bdd247c-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "かかコレ"
+          }
+        },
+        "16644592890bdd247c-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "スーンコレ"
+          }
+        },
+        "16644592890bdd247c-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "16644592890bdd247c-0",
+        "16644592890bdd247c-1",
+        "16644592890bdd247c-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "1664459294ea6938da": {
+      "type": "image-with-text",
+      "blocks": {
+        "1664459293c33312ff-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1664459293c33312ff-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1664459293c33312ff-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1664459293c33312ff-0",
+        "1664459293c33312ff-1",
+        "1664459293c33312ff-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cta1.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16644592892d15f427",
+    "1664459294ea6938da"
+  ]
+}

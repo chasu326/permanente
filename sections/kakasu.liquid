@@ -1,0 +1,32 @@
+
+{% assign kakasu = 'かかすだよ' %}
+{% assign unco = section.settings.unco %}
+
+{{ unco }}<br>
+{{ kakasu }}
+
+<a href="{{ collection.url  }}/送料無料">送料無料</a>
+
+ {% if product.tags contains 'label__受注生産' %}
+  <div class="collection-fre-icon"><img src="{{ '22288322_x70.png' | asset_url }}"></div>
+    {% endif %}
+                   
+{% schema %}
+{
+  "name": "リキッド練習用",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "unco",
+      "label": "数字を入れてね"
+    }
+  ],
+  "presets": [
+    {
+      "name": "リキッド練習用"
+    }
+  ]
+}
+{% endschema %}

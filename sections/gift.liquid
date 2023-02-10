@@ -1,0 +1,627 @@
+{{ 'basestyle.css' | asset_url | stylesheet_tag }}
+{{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'reset.css' | asset_url | stylesheet_tag }}
+{{ 'sweper.min.css' | asset_url | stylesheet_tag }}
+
+ <script src="{{ 'swiper.min.js' | asset_url }}" ></script>
+
+<main id="main-content" class="main">
+    <!-- MV -->
+    <section id="mv" class="mv">
+      <div class="mv__inner">
+        <div>
+          <h1 class="mv__title">わたしたちの<br>法人様専用ギフト</h1>
+          <p class="mv__lead">厳選した伝統工芸品の<br>ご提案からアフターフォローまで</p>
+          <a href="/" class="mv__btn btn btn--1">資料ダウンロード&nbsp;></a>
+        </div>
+      </div>
+    </section>
+    <div class="lp_width">
+      <div class="description">
+        <p class="text-center description__text">
+          法人ギフトをご検討中なら私たちにご相談ください。<br>
+          永年勤続・周年祝い・イベントの記念品など<br class="sp">社内向けギフトから、<br>
+          取引先様への手土産・お中元・お歳暮といった<br class="sp">社外向けギフトまで承ります。<br>
+          大口注文にもご対応、シーンやご予算に合わせた<br class="sp">商品をご提案いたします。
+        </p>
+        <div class="category-links">
+          <a href="/" class="category-links__item link1 flex">
+            <div class="link__image"><img src="{{ 'link1.jpg' | asset_img_url :  '100x100' }}" alt=""></div>
+            <p class="link__text">社内向けは<br>こちら</p>
+          </a>
+          <a href="/" class="category-links__item link2 flex">
+            <div class="link__image"><img src="{{ 'link2.jpg' | asset_img_url :  '100x100' }}" alt=""></div>
+            <p class="link__text">取引先向けは<br>こちら</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 法人ギフトは私たちにご相談ください -->
+    <section id="sec-1" class="section sec1">
+      <div class="lp_width">
+        <h2 class="section__title1">法人ギフトは<br>私たちにご相談ください</h2>
+        <p class="sec1__lead">予算やビジネスシーンに合わせた<br class="sp">最適なプランをご提案いたします</p>
+        <ul class="sec1__list">
+          <li class="sec1__item">
+            従業員に永年勤続表彰や<br>定年退職記念品を贈りたい
+          </li>
+          <li class="sec1__item">
+            周年記念の贈呈品を<br>選びたい
+          </li>
+          <li class="sec1__item">
+            イベント用にグッズや<br>お土産を用意したい
+          </li>
+          <li class="sec1__item">
+            お中元やお歳暮の<br>手配が大変
+          </li>
+          <li class="sec1__item">
+            取引先に喜ばれる<br>ギフト選びに悩んでいる
+          </li>
+          <li class="sec1__item">
+            法人ギフトのしきたり、<br>マナーから相談したい
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- お取引実績 -->
+    <section id="sec-2" class="section sec2">
+      <div class="lp_width">
+        <h2 class="section__title1">お取引実績</h2>
+        <div class="sec2__summary--wrapper">
+          <dl class="sec2__summary">
+            <dt class="summary__title">法人様お取引数</dt>
+            <dd class="summary__detail"><span class="detail1">約</span><span class="detail2">600</span><span class="detail1">社</span>
+            </dd>
+          </dl>
+          <dl class="sec2__summary">
+            <dt class="summary__title">ギフト累計承り実績</dt>
+            <dd class="summary__detail"><span class="detail1">約</span><span class="detail2">1,200</span><span class="detail1">件</span>
+            </dd>
+          </dl>
+          <dl class="sec2__summary">
+            <dt class="summary__title">取り扱い商品数</dt>
+            <dd class="summary__detail"><span class="detail1">約</span><span class="detail2">4,000</span><span class="detail1">点</span>
+            </dd>
+          </dl>
+        </div>
+        <div class="sec__media">
+          <h3 class="sec__media__title">メディア掲載・提携実績</h3>
+          <figure class="sec__media__image">
+            <img src="{{ 'sec1_2.png' | asset_img_url :  'width="886" height="300"' }}" alt="メディア掲載・提携実績">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- お問い合わせ -->
+    <div class="cta">
+      <div class="lp_width">
+        <div class="cta__inner">
+          <h2 class="section__title1">お問い合わせ</h2>
+          <p class="cta__lead">お見積もり・ご相談など、<br class="sp">お気軽にお問い合わせください。</p>
+          <div class="cta__content">
+            <div class="cta__tel">
+              <p class="tel1">TEL</p>
+              <a href="tel:000-000-0000" class="tel2">000-000-0000</a>
+              <p class="tel3">営業時間:9:00-17:00</p>
+            </div>
+            <div class="">
+              <a href="" class="cta__btn btn">メールフォーム ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 想い -->
+    <section id="sec-3" class="section sec3">
+      <div class="lp_width">
+        <div class="sec3__box">
+          <h2 class="section__title2">私たちが法人ギフトで<br>大切にしている3つの想い</h2>
+          <div class="sec3__card">
+            <h3 class="sec3__card__title"><span>01</span>ギフトには想いを添えて</h3>
+            <div class="sec3__card__content flex--pc flex-justify-between flex-row-reverse">
+              <figure class="sec3__card__image"><img src="{{ 'sec3_1.jpg' | asset_img_url :  '250x250' }}" alt=""></figure>
+              <p class="sec3__card__text">
+                私たちは、何を贈るかと同じくらい、どのような「想いを添えて」<br>
+                相手に届けるかを大切にしております。<br>
+                伝統工芸品には、職人によって込められた想いが詰まっております。<br>
+                <strong class="underline">
+                  「繁栄」「飛躍」「良縁」といった意味をもつ縁起物が多く、<br>
+                  記念品やお祝いにぴったりです。
+                </strong><br>
+                私たちにご相談いただければ、ご予算や用途に合わせてはもちろんのこと、<br>
+                贈るシーン毎に、どんな想いを添えると相手に喜んでいただけるかを考え、<br>
+                その気持ちが込められた伝統工芸品をご提案いたします。
+              </p>
+            </div>
+          </div>
+          <div class="sec3__card">
+            <h3 class="sec3__card__title"><span>02</span>より特別感を伝える贈り物</h3>
+            <div class="sec3__card__content flex--pc flex-justify-between">
+              <figure class="sec3__card__image"><img src="{{ 'sec3_2.jpg' | asset_img_url :  '250x250' }}" alt=""></figure>
+              <p class="sec3__card__text right">
+                周年記念や永年勤続の贈呈品、イベントの記念品には、<br>
+                より特別感が伝わるギフトを贈りたいものです。<br>
+                <strong class="underline">
+                  私たちは、日本の伝統技術から生まれた高品質な工芸品のみを厳選して<br>
+                  お取り扱いしております。
+                </strong>幅広い年齢層の方に、また海外の方にも<br>
+                喜んでいただける贈り物を、自信を持ってご提案いたします。<br>
+                また、名入れやラッピング・熨斗といった、特別感を伝えるために<br>
+                欠かせないサービスも充実しております。
+              </p>
+            </div>
+          </div>
+          <div class="sec3__card">
+            <h3 class="sec3__card__title"><span>03</span>アフターフォローで安心感を</h3>
+            <div class="sec3__card__content flex--pc flex-justify-between flex-row-reverse">
+              <figure class="sec3__card__image"><img src="{{ 'sec3_3.jpg' | asset_img_url  }}" alt=""></figure>
+              <p class="sec3__card__text">
+                <strong class="underline">
+                  記念品等の万一の商品不良／破損品等がございましたら、<br>
+                  迅速に交換対応させていただきます。
+                </strong>記念品・縁起物である伝統工芸品の<br>
+                商品不良は、受け取った方へご不快な想いを抱かせてしまうことにも<br>
+                繋がりかねません。迅速かつ誠心誠意ご対応をさせていただきます。
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ビジネスシーンに合わせたご提案 -->
+        <div class="sec3__box">
+          <div class="text-center">
+            <h2 class="section__title2 sec3__title--business">ビジネスシーンに合わせたご提案</h2>
+          </div>
+          <p class="sec3__lead--business">シーンに合わせた、私たちからの提案例です。<br>お客様のご要望に合わせて、柔軟にご対応いたします。</p>
+          <!--slider -->
+          <div class="slider-wrapper container-width--fluid">
+            <div class="swiper-container sec3__slider">
+              <ul class="swiper-wrapper sec3__list">
+                <li class="swiper-slide sec3__item">
+                  <h3 class="sec3__item__title">お取引様へお渡しする周年記念品</h3>
+                  <div class="sec3__item__box flex--pc flex-justify-between flex-align-start">
+                    <figure class="sec3__item__image"><img src="{{ 'sec3_slide1.jpg' | asset_img_url  }}" alt=""></figure>
+                    <div class="sec3__item__content">
+                      <p>丸モ高木陶器<br>
+                        【美濃焼】冷感 花火  フリーグラス ペアセット</p>
+                      <p>¥3,300(税込)</p>
+                      <p class="point">-ポイント-<br><br>
+                        冷たい飲み物を注ぐと色変化すグラス。<br>
+                        桜、花火、富士山などのデザインから<br>
+                        お選びいただけます。<br><br>
+                        桜は「繁栄」「豊かさ」、花火は「厄除け」の意味を持ち、特に富士山は「末広がり」「不老長寿」「無病息災・家内安全」と日本一の縁起物。
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide sec3__item">
+                  <h3 class="sec3__item__title">お取引様へお渡しする周年記念品</h3>
+                  <div class="sec3__item__box flex--pc flex-justify-between flex-align-start">
+                    <figure class="sec3__item__image"><img src="{{ 'sec3_slide2.jpg' | asset_img_url  }}" alt=""></figure>
+                    <div class="sec3__item__content">
+                      <p>丸モ高木陶器<br>
+                        【美濃焼】冷感 花火  フリーグラス ペアセット</p>
+                      <p>¥3,300(税込)</p>
+                      <p class="point">-ポイント-<br><br>
+                        冷たい飲み物を注ぐと色変化すグラス。<br>
+                        桜、花火、富士山などのデザインから<br>
+                        お選びいただけます。<br><br>
+                        桜は「繁栄」「豊かさ」、花火は「厄除け」の意味を持ち、特に富士山は「末広がり」「不老長寿」「無病息災・家内安全」と日本一の縁起物。
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide sec3__item">
+                  <h3 class="sec3__item__title">お取引様へお渡しする周年記念品</h3>
+                  <div class="sec3__item__box flex--pc flex-justify-between flex-align-start">
+                    <figure class="sec3__item__image"><img src="{{ 'sec3_slide3.jpg' | asset_img_url  }}" alt=""></figure>
+                    <div class="sec3__item__content">
+                      <p>丸モ高木陶器<br>
+                        【美濃焼】冷感 花火  フリーグラス ペアセット</p>
+                      <p>¥3,300(税込)</p>
+                      <p class="point">-ポイント-<br><br>
+                        冷たい飲み物を注ぐと色変化すグラス。<br>
+                        桜、花火、富士山などのデザインから<br>
+                        お選びいただけます。<br><br>
+                        桜は「繁栄」「豊かさ」、花火は「厄除け」の意味を持ち、特に富士山は「末広がり」「不老長寿」「無病息災・家内安全」と日本一の縁起物。
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- オプション：ナビゲーションボタン -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="sec3__btn--wrapper text-center"><a href="" class="btn sec3__btn">商品をもっと見る&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a></div>
+          <div class="category-links">
+            <a href="/" class="category-links__item link1 flex">
+              <div class="link__image"><img src="{{ 'link1.jpg' | asset_img_url :  '250x250' }}" alt=""></div>
+              <p class="link__text">社内向けは<br>こちら</p>
+            </a>
+            <a href="/" class="category-links__item link2 flex">
+              <div class="link__image"><img src="{{ 'link2.jpg' | asset_img_url :  '250x250' }}" alt=""></div>
+              <p class="link__text">取引先向けは<br>こちら</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <!-- ギフトコンシェルジュ -->
+    <section id="sec-4" class="section sec4">
+      <div class="sec4__header">
+        <div class="lp_width">
+          <h2 class="section__title2 sec4__header__title">ギフトコンシェルジュが<br>サポートいたします</h2>
+          <p class="sec4__header__lead">
+            私たちのギフトコンシェルジュが、思いを込めたギフトをあなたに代わって手配いたします。<br>
+            大切なお取引先様の周年記念日や毎年のお中元・お歳暮、手土産、<br>
+            しきたりやマナーを大切にしてあなたをサポート。<br>
+            コンシェルジュまでお気軽にお問い合わせください。
+          </p>
+          <div class="text-center"><a href="" class="btn btn--2 sec4__header__btn">お問い合わせ　 ></a></div>
+        </div>
+      </div>
+      <div class="sec4__body">
+        <div class="lp_width">
+          <h3 class="section__title2 sec4__body__title">安心のギフトサービス</h3>
+          <p class="text-center sec4__body__text">
+            永年勤続・周年祝い・イベントの記念品など社内向けギフトから、<br>
+            取引先様への手土産・お中元・お歳暮といった社外向けギフトなど<br>
+            ご要望に応じた柔軟な対応が可能です。
+          </p>
+          <ul class="sec4__list flex flex-justify-between flex-wrap">
+            <li class="sec4__item">
+              <h4 class="sec4__item__title">熨斗・ラッピング</h4>
+              <p class="sec4__item__text">
+                私たちは日本全国から厳選した<br>
+                伝統工芸品を取り扱っています。<br>
+                ご注文いただいた伝統工芸品を贈る際のラッピングに<br>
+                も高級素材の美しい和紙や水引を用いています。<br>
+                目上の方への贈り物には<br>
+                礼をつくした上品な包みを。
+              </p>
+            </li>
+            <li class="sec4__item">
+              <h4 class="sec4__item__title">メッセージカード</h4>
+              <p class="sec4__item__text">
+                私たちは日本全国から厳選した<br>
+                伝統工芸品を取り扱っています。<br>
+                ご注文いただいた伝統工芸品を贈る際のラッピングに<br>
+                も高級素材の美しい和紙や水引を用いています。<br>
+                目上の方への贈り物には<br>
+                礼をつくした上品な包みを。
+              </p>
+            </li>
+            <li class="sec4__item">
+              <h4 class="sec4__item__title">送料無料</h4>
+              <p class="sec4__item__text">
+                私たちは日本全国から厳選した<br>
+                伝統工芸品を取り扱っています。<br>
+                ご注文いただいた伝統工芸品を贈る際のラッピングに<br>
+                も高級素材の美しい和紙や水引を用いています。<br>
+                目上の方への贈り物には<br>
+                礼をつくした上品な包みを。
+              </p>
+            </li>
+            <li class="sec4__item">
+              <h4 class="sec4__item__title">複数発送先も<br>一度に完結</h4>
+              <p class="sec4__item__text">
+                私たちは日本全国から厳選した<br>
+                伝統工芸品を取り扱っています。<br>
+                ご注文いただいた伝統工芸品を贈る際のラッピングに<br>
+                も高級素材の美しい和紙や水引を用いています。<br>
+                目上の方への贈り物には<br>
+                礼をつくした上品な包みを。
+              </p>
+            </li>
+            <li class="sec4__item">
+              <h4 class="sec4__item__title">領収証<br>オンライン発行</h4>
+              <p class="sec4__item__text">
+                私たちは日本全国から厳選した<br>
+                伝統工芸品を取り扱っています。<br>
+                ご注文いただいた伝統工芸品を贈る際のラッピングに<br>
+                も高級素材の美しい和紙や水引を用いています。<br>
+                目上の方への贈り物には<br>
+                礼をつくした上品な包みを。
+              </p>
+            </li>
+            <li class="sec4__item">
+              <h4 class="sec4__item__title">選べる<br>お支払い方法</h4>
+              <p class="sec4__item__text">
+                私たちは日本全国から厳選した<br>
+                伝統工芸品を取り扱っています。<br>
+                ご注文いただいた伝統工芸品を贈る際のラッピングに<br>
+                も高級素材の美しい和紙や水引を用いています。<br>
+                目上の方への贈り物には<br>
+                礼をつくした上品な包みを。
+              </p>
+            </li>
+            <li class="sec4__item">
+              <h4 class="sec4__item__title">大口注文対応</h4>
+              <p class="sec4__item__text">
+                私たちは日本全国から厳選した<br>
+                伝統工芸品を取り扱っています。<br>
+                ご注文いただいた伝統工芸品を贈る際のラッピングに<br>
+                も高級素材の美しい和紙や水引を用いています。<br>
+                目上の方への贈り物には<br>
+                礼をつくした上品な包みを。
+              </p>
+            </li>
+            <li class="sec4__item">
+              <h4 class="sec4__item__title">簡単見積もり</h4>
+              <p class="sec4__item__text">
+                私たちは日本全国から厳選した<br>
+                伝統工芸品を取り扱っています。<br>
+                ご注文いただいた伝統工芸品を贈る際のラッピングに<br>
+                も高級素材の美しい和紙や水引を用いています。<br>
+                目上の方への贈り物には<br>
+                礼をつくした上品な包みを。
+              </p>
+            </li>
+            <li class="sec4__item">
+              <h4 class="sec4__item__title">海外発送可能</h4>
+              <p class="sec4__item__text">
+                私たちは日本全国から厳選した<br>
+                伝統工芸品を取り扱っています。<br>
+                ご注文いただいた伝統工芸品を贈る際のラッピングに<br>
+                も高級素材の美しい和紙や水引を用いています。<br>
+                目上の方への贈り物には<br>
+                礼をつくした上品な包みを。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- お客様の声 -->
+    <section id="sec-5" class="section sec5">
+      <h2 class="section__title2">お客様の声</h2>
+      <p class="text-center sec5__lead">私たちをご利用いただいたお客様から嬉しいお言葉をいただいております。</p>
+      <!--slider -->
+      <div class="slider-wrapper container-width--fluid">
+        <div class="swiper-container sec5__slider">
+          <ul class="swiper-wrapper sec5__list">
+            <li class="swiper-slide sec5__item">
+              <div class="sec5__item__header">
+                <div class="flex--pc flex-justify-between flex-align-center flex-row-reverse">
+                  <h3 class="sec5__item__header__title">ご提案いただいたおかげで<br>お取引様に大変喜んでいただけました！</h3>
+                  <div class="sec5__item__header__name flex--sp flex-align-center">
+                    <img src="{{ 'sec5_1_profile.jpg' | asset_img_url  }}" alt="">
+                    <div class="">
+                      <p class="name1">複合サービス事業</p>
+                      <p class="name2">●●様</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sec5__item__info">
+                <div class="flex--pc flex-justify-between flex-align-end">
+                  <div class="sec5__item__summary--wrapper">
+                    <dl class="sec5__item__summary">
+                      <dt class="sec5__item__summary__title">予算:</dt>
+                      <dd class="sec5__item__summary__text">5,000円</dd>
+                    </dl>
+                    <dl class="sec5__item__summary">
+                      <dt class="sec5__item__summary__title">購入商品:</dt>
+                      <dd class="sec5__item__summary__text">【美濃焼】冷感 花火  フリーグラス ペアセット</dd>
+                    </dl>
+                  </div>
+                  <figure class="sec5__item__info__image">
+                    <img src="{{ 'sec5_1_item.jpg' | asset_img_url  }}" alt="">
+                  </figure>
+                </div>
+              </div>
+              <p class="sec5__item__info__text">
+                選んだ経緯は〜。感想〜。<br>
+                ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。
+              </p>
+            </li>
+            <li class="swiper-slide sec5__item">
+              <div class="sec5__item__header">
+                <div class="flex--pc flex-justify-between flex-align-center flex-row-reverse">
+                  <h3 class="sec5__item__header__title">ご提案いただいたおかげで<br>お取引様に大変喜んでいただけました！</h3>
+                  <div class="sec5__item__header__name flex--sp flex-align-center">
+                    <img src="{{ 'sec5_2_profile.jpg' | asset_img_url  }}" alt="">
+                    <div class="">
+                      <p class="name1">複合サービス事業</p>
+                      <p class="name2">●●様</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sec5__item__info">
+                <div class="flex--pc flex-justify-between flex-align-end">
+                  <div class="sec5__item__summary--wrapper">
+                    <dl class="sec5__item__summary">
+                      <dt class="sec5__item__summary__title">予算:</dt>
+                      <dd class="sec5__item__summary__text">5,000円</dd>
+                    </dl>
+                    <dl class="sec5__item__summary">
+                      <dt class="sec5__item__summary__title">購入商品:</dt>
+                      <dd class="sec5__item__summary__text">【美濃焼】冷感 花火  フリーグラス ペアセット</dd>
+                    </dl>
+                  </div>
+                  <figure class="sec5__item__info__image">
+                    <img src="{{ 'sec5_2_item.jpg' | asset_img_url  }}" alt="">
+                  </figure>
+                </div>
+              </div>
+              <p class="sec5__item__info__text">
+                選んだ経緯は〜。感想〜。<br>
+                ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。
+              </p>
+            </li>
+            <li class="swiper-slide sec5__item">
+              <div class="sec5__item__header">
+                <div class="flex--pc flex-justify-between flex-align-center flex-row-reverse">
+                  <h3 class="sec5__item__header__title">ご提案いただいたおかげで<br>お取引様に大変喜んでいただけました！</h3>
+                  <div class="sec5__item__header__name flex--sp flex-align-center">
+                    <img src="{{ 'sec5_3_profile.jpg' | asset_img_url  }}" alt="">
+                    <div class="">
+                      <p class="name1">複合サービス事業</p>
+                      <p class="name2">●●様</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sec5__item__info">
+                <div class="flex--pc flex-justify-between flex-align-end">
+                  <div class="sec5__item__summary--wrapper">
+                    <dl class="sec5__item__summary">
+                      <dt class="sec5__item__summary__title">予算:</dt>
+                      <dd class="sec5__item__summary__text">5,000円</dd>
+                    </dl>
+                    <dl class="sec5__item__summary">
+                      <dt class="sec5__item__summary__title">購入商品:</dt>
+                      <dd class="sec5__item__summary__text">【美濃焼】冷感 花火  フリーグラス ペアセット</dd>
+                    </dl>
+                  </div>
+                  <figure class="sec5__item__info__image">
+                    <img src="{{ 'sec5_3_item.jpg' | asset_img_url  }}" alt="">
+                  </figure>
+                </div>
+              </div>
+              <p class="sec5__item__info__text">
+                選んだ経緯は〜。感想〜。<br>
+                ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。ここのテキストが入ります。
+              </p>
+            </li>
+          </ul>
+          <!-- オプション：ページネーション -->
+          <div class="swiper-pagination"></div>
+          <!-- オプション：ナビゲーションボタン -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ご利用方法 -->
+    <section id="sec-6" class="section sec6">
+      <div class="lp_width">
+        <h2 class="section__title2">ご利用方法</h2>
+
+        <ul class="sec6__list flex--pc flex-justify-between flex-wrap">
+          <li class="sec6__item">
+            <p class="step">STEP<span>1</span></p>
+            <figure class=""><img src="{{ 'sec6_1.jpg' | asset_img_url  }}" alt=""></figure>
+            <div class="sec6__item__inner">
+              <h3 class="sec6__item__title">お問い合わせ</h3>
+              <p class="sec6__item__text">
+                お問い合わせフォームまたは<br>お電話でご連絡ください。
+              </p>
+              <p class="sec6__item__text">※２営業日以内にご連絡いたします。</p>
+            </div>
+          </li>
+          <li class="sec6__item">
+            <p class="step">STEP<span>2</span></p>
+            <figure class=""><img src="{{ 'sec6_2.jpg' | asset_img_url }}" alt=""></figure>
+            <div class="sec6__item__inner">
+              <h3 class="sec6__item__title">ギフトのご提案</h3>
+              <p class="sec6__item__text">
+                ご相談内容を元に、最適なギフトをご提案いたします。<br>
+                伝統工芸品には、一点ずつ意味や想いが込められておりますので、<br>
+                そちらも合わせてご説明いたします。
+              </p>
+            </div>
+          </li>
+          <li class="sec6__item">
+            <p class="step">STEP<span>3</span></p>
+            <figure class=""><img src="{{ 'sec6_3.jpg' | asset_img_url }}" alt=""></figure>
+            <div class="sec6__item__inner">
+              <h3 class="sec6__item__title">お打ち合わせ</h3>
+              <p class="sec6__item__text">
+                ご提案内容をご検討いただきます。<br>
+                その間、ご希望があればオンラインミーティング等でのお打ち合わせが可能です。
+              </p>
+            </div>
+          </li>
+          <li class="sec6__item">
+            <p class="step">STEP<span>4</span></p>
+            <figure class=""><img src="{{ 'sec6_4.jpg' | asset_img_url }}" alt=""></figure>
+            <div class="sec6__item__inner">
+              <h3 class="sec6__item__title">ご注文</h3>
+              <p class="sec6__item__text">
+                商品やご注文内容が確定しましたら、ご注文手続きのご案内をいたします。
+              </p>
+              <p class="sec6__item__text">お支払い方法はお選びいただけます。</p>
+            </div>
+          </li>
+          <li class="sec6__item">
+            <p class="step">STEP<span>5</span></p>
+            <figure class=""><img src="{{ 'sec6_5.jpg' | asset_img_url }}" alt=""></figure>
+            <div class="sec6__item__inner">
+              <h3 class="sec6__item__title">納品</h3>
+              <p class="sec6__item__text">
+                発送の準備をさせていただきます。<br>
+                ご指定いただいた日時、<br>
+                ご住所へお届けいたします。
+              </p>
+            </div>
+          </li>
+          <li class="sec6__item">
+            <p class="step">STEP<span>6</span></p>
+            <figure class=""><img src="{{ 'sec6_6.jpg' | asset_img_url }}" alt=""></figure>
+            <div class="sec6__item__inner">
+              <h3 class="sec6__item__title">アフターフォロー</h3>
+              <p class="sec6__item__text">
+                万一の商品の破損、商品不良などがございましたら、迅速に交換対応いたします。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+<script>
+/* html読み込み直後
+-------------------------------------------------- */
+document.addEventListener('DOMContentLoaded', function(){
+  // ページの表示
+  var html = document.querySelector("body");
+  html.style.opacity = "1";
+});
+
+/* スライダー
+-------------------------------------------------- */
+var gallerySlide = new Swiper ('.sec3__slider', {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  autoplay: { delay: 4000 },
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1.55,
+  spaceBetween: 90,
+  breakpoints: {
+    679: {
+      slidesPerView: 1.4,
+      spaceBetween: 30,
+    }
+  }
+});
+
+var gallerySlide = new Swiper ('.sec5__slider', {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  autoplay: { delay: 4000000 },
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1.8,
+  spaceBetween: 120,
+  breakpoints: {
+    767: {
+      slidesPerView: 1.2,
+      spaceBetween: 15,
+    },
+    1210: {
+      slidesPerView: 1.4,
+      spaceBetween: 60,
+    }
+  }
+});
+</script>

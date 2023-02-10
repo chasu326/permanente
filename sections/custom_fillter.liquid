@@ -1,0 +1,172 @@
+
+<div class="fillter_wrap">
+{%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
+  {{ 'component-facets.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+
+  <div class="page-width" id="main-collection-filters" data-id="{{ section.id }}">
+    {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, collapse_on_larger_devices: section.settings.collapse_on_larger_devices %}
+  </div>
+{%- endif -%}
+
+  <div class="fillter_title">
+    <h2>{{section.settings.title}}</h2>
+    <span>{{section.settings.title_jp}}</span>
+  </div>
+  
+  <div class="fillter_inner">
+    <form>
+    <select id="area" class="select_box">
+      <option value="all">コレクション</option>
+      {%for collection in collections %}
+      <option value="{{ collection.title }}">{{ collection.title }}</option>
+      {% endfor %}
+    </select>
+      
+    <select id="person" class="select_box">
+    <option value="">ー</option>
+    {% for block in section.blocks %}
+    <option value="{{block.settings.value}}">{{block.settings.tag_name}}</option>
+    {% endfor %}
+    </select>
+      <span>
+       {% for tag in product.tags %}
+        {% if tag contains 'info_' %}
+        {{ tag | split: '_' | last }}<br>
+      {% endif %}
+      {% endfor %}
+      </span>
+      <a type="button" value="check" id="btn" href="#" class="fillter_btn">検索する</a>
+      <div id="view"></div>
+    </form>
+  </div>
+</div>
+
+{% style %}
+.fillter_wrap{
+  width:100%;
+  background-color:#fff;
+  padding-top:50px;
+  padding-bottom:50px;
+  text-align:center;
+}
+.fillter_title{
+  margin-bottom:40px;
+}
+.fillter_title h2{
+  margin-bottom:10px;
+}
+.fillter_title span{
+  display:block;
+}
+
+.fillter_inner{
+  display:inline-block;
+}
+
+.select_box{
+  width:200px;
+  height:30px;
+  border-radius:0;
+  margin-right:20px;
+  
+}
+
+
+
+#view{
+  display:none;
+}
+.fillter_btn{
+  padding:6px 10px;
+  font-size:12px;
+  border:solid 1px #999;
+  text-decoration:none;
+  color:#000;
+  background-color:#fff;
+}
+@media screen and (max-width: 700px){
+  .fillter_inner{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .fillter_inner form{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+
+  }
+  .select_box{
+    width:100%;
+    margin-right:0;
+    margin-bottom:20px;
+  }
+  .fillter_btn{
+    width:30%;
+  }
+}
+{% endstyle %}
+
+{% schema %}
+{
+"name":"カスタムフィルター１",
+"settings":[
+    {
+    "type":"text",
+    "id":"title",
+    "label":"タイトル"
+    },
+    {
+      "type":"text",
+      "id":"title_jp",
+      "label":"日本語タイトル"
+      }
+    ],
+    "blocks":[
+    {
+    "type":"image",
+    "name":"コレクション",
+    "settings":[
+      {
+      "type":"text",
+      "id":"value",
+      "label":"value"
+      },
+      {
+      "type":"text",
+      "id":"tag_name",
+      "label":"タグ名"
+      }
+        ]
+    }
+    ],
+"presets":[
+{
+"name":"カスタムフィルター",
+"category":"カスタムパーツ"
+}]
+}
+{% endschema %}
+
+
+<script>
+  window.addEventListener('DOMContentLoaded', ()=>{
+  document.querySelector('#btn').addEventListener('click',e=>{
+  var url="https://dawnliquid.myshopify.com/collections/";
+  var s=[...document.querySelectorAll('select')].filter(x=>{
+    return x.value!=="";
+  }).map(x=>{
+    return encodeURIComponent(x.value)+"/";
+  }).join('');
+  if(s.length>0) s=s;
+  document.querySelector('#view').textContent=url+s;
+
+  var btn = document.getElementById('btn');
+  var url = url+s;
+  btn.setAttribute('href', url);
+});
+});
+
+</script>

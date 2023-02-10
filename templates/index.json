@@ -1,0 +1,664 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "medium"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/permanentesu-n.png",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "flex-end",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "164597470073774ab6": {
+      "type": "image-with-text",
+      "blocks": {
+        "1645974700b8975c38-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1645974700b8975c38-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>スーンはShopify専門カスタマイズしております。<\/p><p>傍らイラストや立体キャラクター作成しております。<\/p>"
+          }
+        },
+        "1645974700b8975c38-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "かわいい",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "1645974700b8975c38-0",
+        "1645974700b8975c38-1",
+        "1645974700b8975c38-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/su-npify.png",
+        "height": "adapt",
+        "color_scheme": "accent-2",
+        "layout": "image_first"
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "featured_products": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "おすすめコレクション",
+        "collection": "all",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": true,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "multi_column": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/su-npify.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ume100.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/su--n03.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "お客様の声",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "column_alignment": "center",
+        "background_style": "secondary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "1645976442fbb49169": {
+      "type": "collection-list",
+      "blocks": {
+        "16459764425eec6d0f-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "かかコレ"
+          }
+        },
+        "16459764425eec6d0f-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "スーンコレ"
+          }
+        },
+        "16459764425eec6d0f-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kami-coll"
+          }
+        }
+      },
+      "block_order": [
+        "16459764425eec6d0f-0",
+        "16459764425eec6d0f-1",
+        "16459764425eec6d0f-2"
+      ],
+      "settings": {
+        "title": "コレクション",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": true,
+        "show_view_all": true
+      }
+    },
+    "1640270815ccef6af4": {
+      "type": "featured-product",
+      "blocks": {
+        "1640270815b7d05a0d-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "1640270815b7d05a0d-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "1640270815b7d05a0d-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "1640270815b7d05a0d-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1640270815b7d05a0d-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "1640270815b7d05a0d-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1640270815b7d05a0d-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "1640270815b7d05a0d-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "1640270815b7d05a0d-0",
+        "1640270815b7d05a0d-1",
+        "1640270815b7d05a0d-2",
+        "1640270815b7d05a0d-3",
+        "1640270815b7d05a0d-4",
+        "1640270815b7d05a0d-5",
+        "1640270815b7d05a0d-6",
+        "1640270815b7d05a0d-7"
+      ],
+      "settings": {
+        "product": "venus",
+        "secondary_background": false,
+        "hide_variants": true,
+        "enable_video_looping": true
+      }
+    },
+    "16459773300ed4b7b5": {
+      "type": "image-banner",
+      "blocks": {
+        "164597733098532266-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "164597733098532266-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "164597733098532266-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "164597733098532266-0",
+        "164597733098532266-1",
+        "164597733098532266-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/su-npify.png",
+        "image_2": "shopify:\/\/shop_images\/su--n02.png",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "16519305113dbefc1d": {
+      "type": "custom_fillter",
+      "blocks": {
+        "ef1abdb8-26d1-4901-bb93-d1486a11f856": {
+          "type": "image",
+          "settings": {
+            "value": "kakasu-tujyou",
+            "tag_name": "かかす"
+          }
+        },
+        "b5192123-7d7d-46b7-ab16-997dc0b4eedd": {
+          "type": "image",
+          "settings": {
+            "value": "",
+            "tag_name": "スーンコレ"
+          }
+        }
+      },
+      "block_order": [
+        "ef1abdb8-26d1-4901-bb93-d1486a11f856",
+        "b5192123-7d7d-46b7-ab16-997dc0b4eedd"
+      ],
+      "settings": {
+        "title": "カテゴリー",
+        "title_jp": ""
+      }
+    },
+    "1652249901a0c62dd4": {
+      "type": "dropping",
+      "blocks": {
+        "d6a24fee-d92f-4912-934e-eced0c944b73": {
+          "type": "collection",
+          "settings": {
+            "car_name": "ファッション",
+            "kind_img": "shopify:\/\/shop_images\/cateicon_001_150x_268a4635-5265-4d16-9312-2f5f8c3ef5e1.webp",
+            "main_linklist": "link-list-1"
+          }
+        },
+        "15809f8a-f284-4140-a7f2-2cccdb1ea14d": {
+          "type": "collection",
+          "settings": {
+            "car_name": "カテゴリー",
+            "kind_img": "shopify:\/\/shop_images\/cateicon_002.png",
+            "main_linklist": "main-menu"
+          }
+        },
+        "263af384-be81-4b48-b65b-570f2d50195d": {
+          "type": "collection",
+          "settings": {
+            "car_name": "かかす",
+            "kind_img": "shopify:\/\/shop_images\/cateicon_003.png",
+            "main_linklist": "link-list"
+          }
+        },
+        "0a5e647a-99a4-44a4-b0d1-321b345be593": {
+          "type": "collection",
+          "settings": {
+            "car_name": "カテゴリー",
+            "kind_img": "shopify:\/\/shop_images\/cateicon_004.png",
+            "main_linklist": "main-menu"
+          }
+        },
+        "28ee744c-80a7-453b-a9be-cbcf2387b5b0": {
+          "type": "collection",
+          "settings": {
+            "car_name": "カテゴリー",
+            "kind_img": "shopify:\/\/shop_images\/cateicon_005.png",
+            "main_linklist": "main-menu"
+          }
+        },
+        "7190a75a-154e-4902-ade3-03fb19054e26": {
+          "type": "collection",
+          "settings": {
+            "car_name": "カテゴリー",
+            "kind_img": "shopify:\/\/shop_images\/cateicon_006.png",
+            "main_linklist": "main-menu"
+          }
+        },
+        "82bb6dd5-bd6c-4ae7-b2b4-b1d393448ace": {
+          "type": "collection",
+          "settings": {
+            "car_name": "カテゴリー",
+            "kind_img": "shopify:\/\/shop_images\/cateicon_007.png",
+            "main_linklist": "main-menu"
+          }
+        },
+        "99f809b5-f353-4b53-8642-9594e4b67684": {
+          "type": "collection",
+          "settings": {
+            "car_name": "カテゴリー",
+            "kind_img": "shopify:\/\/shop_images\/cateicon_008.png",
+            "main_linklist": "main-menu"
+          }
+        },
+        "84bf27e4-e575-4688-ba96-b8289c7a1cda": {
+          "type": "collection",
+          "settings": {
+            "car_name": "カテゴリー",
+            "kind_img": "shopify:\/\/shop_images\/cateicon_009.png",
+            "main_linklist": "main-menu"
+          }
+        },
+        "32482292-69e6-4d54-a755-beada31c3fee": {
+          "type": "collection",
+          "settings": {
+            "car_name": "カテゴリー",
+            "kind_img": "shopify:\/\/shop_images\/cateicon_010.png",
+            "main_linklist": "main-menu"
+          }
+        }
+      },
+      "block_order": [
+        "d6a24fee-d92f-4912-934e-eced0c944b73",
+        "15809f8a-f284-4140-a7f2-2cccdb1ea14d",
+        "263af384-be81-4b48-b65b-570f2d50195d",
+        "0a5e647a-99a4-44a4-b0d1-321b345be593",
+        "28ee744c-80a7-453b-a9be-cbcf2387b5b0",
+        "7190a75a-154e-4902-ade3-03fb19054e26",
+        "82bb6dd5-bd6c-4ae7-b2b4-b1d393448ace",
+        "99f809b5-f353-4b53-8642-9594e4b67684",
+        "84bf27e4-e575-4688-ba96-b8289c7a1cda",
+        "32482292-69e6-4d54-a755-beada31c3fee"
+      ],
+      "settings": {
+      }
+    },
+    "16578911690b3948a4": {
+      "type": "featured-product",
+      "blocks": {
+        "1657891169bd7a7d59-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "1657891169bd7a7d59-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "1657891169bd7a7d59-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "1657891169bd7a7d59-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1657891169bd7a7d59-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "1657891169bd7a7d59-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1657891169bd7a7d59-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "1657891169bd7a7d59-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "1657891169bd7a7d59-0",
+        "1657891169bd7a7d59-1",
+        "1657891169bd7a7d59-2",
+        "1657891169bd7a7d59-3",
+        "1657891169bd7a7d59-4",
+        "1657891169bd7a7d59-5",
+        "1657891169bd7a7d59-6",
+        "1657891169bd7a7d59-7"
+      ],
+      "settings": {
+        "product": "kakasu-tujyou",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "166307701579139bef": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "新着記事",
+        "blog": "ニュース",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true
+      }
+    },
+    "1663077804b25066fa": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "16630781921d35866c": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "かかコレ",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "16630781985ecfef75": {
+      "type": "collection-list",
+      "blocks": {
+        "1663078198ca466c42-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "かかコレ"
+          }
+        },
+        "1663078198ca466c42-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1663078198ca466c42-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "c6ca05c5-464e-4964-b720-ebd2fd7f76f4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "c46b3f81-7f46-4421-a0e1-3dc1bc24d3f1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "a5e3d5fb-cc06-4be1-a927-063753cc11c5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "50f56a20-4a28-427c-ab14-7518f371a9e3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "b93a6716-9020-44c2-bcb2-dcc4a3ed2d4e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "9eb5ef6f-ddf5-46a2-824a-b1435be35964": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1663078198ca466c42-0",
+        "1663078198ca466c42-1",
+        "1663078198ca466c42-2",
+        "c6ca05c5-464e-4964-b720-ebd2fd7f76f4",
+        "c46b3f81-7f46-4421-a0e1-3dc1bc24d3f1",
+        "a5e3d5fb-cc06-4be1-a927-063753cc11c5",
+        "50f56a20-4a28-427c-ab14-7518f371a9e3",
+        "b93a6716-9020-44c2-bcb2-dcc4a3ed2d4e",
+        "9eb5ef6f-ddf5-46a2-824a-b1435be35964"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "portrait",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "1663170791f7c89435": {
+      "type": "now-time",
+      "settings": {
+        "title": "最近",
+        "title_jp": ""
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "164597470073774ab6",
+    "rich_text",
+    "featured_products",
+    "multi_column",
+    "1645976442fbb49169",
+    "1640270815ccef6af4",
+    "16459773300ed4b7b5",
+    "16519305113dbefc1d",
+    "1652249901a0c62dd4",
+    "16578911690b3948a4",
+    "166307701579139bef",
+    "1663077804b25066fa",
+    "16630781921d35866c",
+    "16630781985ecfef75",
+    "1663170791f7c89435"
+  ]
+}

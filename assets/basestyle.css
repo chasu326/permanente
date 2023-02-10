@@ -1,0 +1,213 @@
+/* 初期設定 */
+
+.fixed{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:10000;
+  }
+
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "MS Pゴシック",sans-serif;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  color: #171C22;
+  background-color: #fff;
+}
+
+.lp_width{
+  max-width: 1020px; /* 990px + 30px */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin:0 auto;
+}
+
+body,
+header,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+a,
+dl,
+dd,
+dt,
+div,
+span,
+time,
+figure,
+figcaption,
+article,
+section,
+aside {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 2.7rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+p{
+  line-height:2;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+img,
+svg {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+a:hover {
+  opacity: .7;
+  transition: 0.3s;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* .pc{
+  display: none;
+}
+
+.sp, .sp_ver {
+  display: none;
+} */
+
+.flex-container
+ {
+  display: flex;
+}
+
+
+.flex-item {
+  margin:0 auto;
+  max-width: 33%;
+  padding:0 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.vertical {
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+}
+
+/* 初期設定----------------------------------------------- */
+
+/* ボタンデザイン */
+.link-btn {
+  display: block;
+  color: #171C22;
+  background-color: #000;
+  width: 100%;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.5rem;
+
+  letter-spacing: 0.1rem;
+  border-radius: 5px;
+}
+
+.btn-w {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}
+
+.btn-area{
+  text-align: center;
+  margin-top:5%;
+}
+
+a.btn-border {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+a.btn-border:hover {
+  color: #fff;
+  background: black;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #212529;
+}
+/* ボタンデザイン--------------------------------------- */
+
+/* セクション設定 */
+.section-wrapper {
+  max-width: 990px;
+  margin: 5% 2% 0 2%;
+  position: relative;
+}
+
+.section-title {
+  font-size: 4rem;
+  margin-top:5%;
+  text-align: center;
+}
+
+/* セクション設定-------------------------------------------- */

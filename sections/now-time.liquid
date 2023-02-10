@@ -1,0 +1,48 @@
+{% include 'recently-viewed' %}
+
+{% schema %}
+  {
+    "name": "最近見た商品",
+   "settings":[
+    {
+    "type":"text",
+    "id":"title",
+    "label":"タイトル"
+    },
+    {
+      "type":"text",
+      "id":"title_jp",
+      "label":"日本語タイトル"
+      }
+    ],
+    "blocks":[
+    {
+    "type":"image",
+    "name":"コレクション",
+    "settings":[
+      {
+      "type":"text",
+      "id":"value",
+      "label":"value"
+      },
+      {
+      "type":"text",
+      "id":"tag_name",
+      "label":"タグ名"
+      }
+        ]
+    }
+    ],
+"presets":[
+{
+"name":"最近見た商品",
+"category":"カスタムパーツ"
+}]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

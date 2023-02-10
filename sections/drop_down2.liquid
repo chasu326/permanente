@@ -1,0 +1,190 @@
+<div class="tab_box">
+
+  
+	<div class="panel_area">
+		<div class="tab_panel active">
+			<p>タブ11111</p>
+			<div id="zzzzzzzzzzzz">
+                 {% for block in section.blocks %}
+                <div>
+                  <span><img class="column-img" src="{{ block.settings.kind_img | img_url: '350x' }}"></span>
+                    <ul class="madaln-box">
+                     {% for link in linklists[block.settings.main_linklist].links %}
+                     {% if link.links == blank %}
+
+                    {%- comment -%}ここにifで設定した条件に当てはまる場合に出力するコードを記載します。{%- endcomment -%}  
+
+                      <li class="nav-item active">
+                      <a class="nav-link" href="{{ link.url }}">{{link.title}}</a>
+                      </li>
+                     {% endif %}
+                    {% endfor %} 
+                    </ul>
+                </div>
+                  {% endfor %}
+            </div>
+		</div>
+		<div class="tab_panel">
+			<p>タブ22222</p>
+			<div id="zzzzzzzzzzzz">
+                 {% for block in section.blocks %}
+                <div>
+                  <span><img class="column-img" src="{{ block.settings.kind_img2 | img_url: '350x' }}"></span>
+                    <ul class="madaln-box">
+                     {% for link in linklists[block.settings.main_linklist2].links %}
+                     {% if link.links == blank %}
+
+                    {%- comment -%}ここにifで設定した条件に当てはまる場合に出力するコードを記載します。{%- endcomment -%}  
+
+                      <li class="nav-item active">
+                      <a class="nav-link" href="{{ link.url }}">{{link.title}}</a>
+                      </li>
+                     {% endif %}
+                    {% endfor %} 
+                    </ul>
+                </div>
+                  {% endfor %}
+            </div>
+		</div> 
+	</div>
+</div>
+
+<style>
+  
+#zzzzzzzzzzzz  {
+  display:flex;
+  justify-content:center;
+}
+  
+#zzzzzzzzzzzz div {
+
+}
+
+#zzzzzzzzzzzz div span {
+  cursor: pointer;
+  margin: 10px;
+}
+
+#zzzzzzzzzzzz div ul {
+  display: none;
+
+  width: 200px;
+  background: #f0f0f0;
+}
+  
+  
+/*タブ実装*/
+
+
+.tab_box .panel_area {
+    border: solid 1px #e3ebf3;
+    padding: 20px;
+}
+
+.tab_box .tab_panel {
+    display:none;
+}
+
+.tab_box .tab_panel.active {
+    display:block;
+}
+
+</style>
+
+<script>
+
+$(function () {
+  $('span').click(function() { 
+    if ($(this).attr('class') == 'selected') {
+      // メニュー非表示
+      $(this).removeClass('selected').next('ul').slideUp('fast');
+    } else {
+      // 表示しているメニューを閉じる
+      $('span').removeClass('selected');
+      $('ul').hide();
+
+      // メニュー表示
+      $(this).addClass('selected').next('ul').slideDown('fast');
+    }    
+  });
+  
+  // マウスカーソルがメニュー上/メニュー外
+  $('span,ul').hover(function(){
+    over_flg = true;
+  }, function(){
+    over_flg = false;
+  });  
+  
+  // メニュー領域外をクリックしたらメニューを閉じる
+  $('body').click(function() {
+    if (over_flg == false) {
+      $('span').removeClass('selected');
+      $('ul').slideUp('fast');
+    }
+  });
+});  
+  
+  
+
+  
+</script>
+
+{% schema %}
+  {
+    "name": "ドロップダウン",
+    "class": "collection-column",
+    "settings": [
+	],
+	"blocks": [
+	{
+       "name": "コレクションを選択",
+       "type": "collection",
+       "settings": [
+          {
+            "type": "text",
+            "id": "car_name",
+            "default": "車の名前",
+            "label": "車の名前を入力"
+          },
+         {
+         "type": "collection",
+         "id": "collection",
+         "label": "コレクションを選ぶ"
+          },
+         {
+         "type": "image_picker",
+         "id": "kind_img",
+         "label": "タブ１の画像を選ぶ"
+          },
+          {
+          "type": "link_list",
+          "id": "main_linklist",
+          "label": "タブ１のメニューを選択",
+          "default": "main-menu"
+          },
+         {
+         "type": "image_picker",
+         "id": "kind_img2",
+         "label": "タブ２の画像を選ぶ"
+          },
+          {
+          "type": "link_list",
+          "id": "main_linklist2",
+          "label": "タブ２のメニューを選択"
+          }
+         ]
+       }
+     ],
+	"presets": [
+       {
+         "name": "ドロップダウン"
+       }
+     ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,150 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+          {% for block in section.blocks %}
+          	{% case block.type %}
+          		{% when 'slide' %}
+            <div class="swiper-slide">
+              	{{ block.settings.slide_image | img_url: '600 × 600', scale: 2 | img_tag }}
+                <p class="swiper-slide-txt">{{ block.settings.slide_text }}</p>
+            </div>
+          	{% endcase %}
+          {% endfor %}
+			
+        </div>
+
+        <div class="swiper-pagination"></div>
+    
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        spaceBetween: 30,
+        effect: 'fade',  
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+
+    },  
+        loop: true,
+        autoplay: {
+          delay: {{ section.settings.slide_interval  | times:1000 }},
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+
+
+
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+          	margin-top:10vh;
+        }
+
+        .swiper-wrapper{
+            /* width: 600px; */
+            height: 500px;
+        }
+
+        .swiper-slide{
+            background: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .swiper-slide img{
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-slide-txt{
+            font-size: 60px;
+          	font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+          	color:#000;
+        }
+    </style>
+
+
+
+{% schema %}
+  {
+    "name": "カスタムスライド",
+	"class": "custom-swiper",
+	"settings": [
+		{
+		"type": "range",
+		"id": "slide_interval",
+		"label": "スライド間隔",
+		"info": "スライド毎の間隔を設定（/秒）",
+		"default": 5,
+		"min": 3,
+		"max": 10,
+		"step": 1,
+		"unit": "s"
+		}
+	],
+  	"max_blocks": 7,
+    "blocks": [
+       {
+         "name": "スライド",
+         "type": "slide",
+		 "limit": 7,
+         "settings": [
+           {
+             "type": "image_picker",
+             "id": "slide_image",
+             "label": "スライド画像"
+           },
+           {
+             "type": "text",
+             "id": "slide_text",
+             "label": "スライドテキスト"
+           }
+         ]
+       }
+     ],
+	"presets": [
+		{
+			"name": "カスタムスライド"
+		}
+	]
+  }
+{% endschema %}

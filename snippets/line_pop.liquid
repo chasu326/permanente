@@ -1,0 +1,125 @@
+<div id="linebox" class="line-button when-it-open">
+  <div class="line-recommend">
+   <p class="recom-coment">
+    カート
+    </p>
+  </div>
+  <div class="line-img">
+   <a href="https://dawnliquid.myshopify.com/cart/add?id={% for variant in product.variants %}
+{{ variant.id }}{% endfor %}&quantity=1" target="_blank">
+     <img src="https://cdn.shopify.com/s/files/1/0608/4332/7713/files/11.png?v=1664605952">
+    </a>
+     <p id="lineNotice" class="line-notice no_notice">1</p>
+ </div>
+</div>
+
+<style>
+  /* LINE用 */
+.line-button {
+  position: fixed;
+  z-index: 4001;
+  bottom: 32px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  transition: 2s;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.when-it-open {
+  bottom: -200px;
+}
+
+.line-recommend {
+  margin-right: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.recom-coment {
+  margin: 0;
+}
+
+.line-button img {
+  text-align: right;
+  width: 40px;
+  vertical-align: bottom;
+}
+
+.line-notice {
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  color: #fff;
+  background: red;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  transition: 1s;
+}
+
+.no_notice {
+  opacity: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .line-button {
+    bottom: 45px;
+    right: 10px;
+    transition: 2s;
+    padding: 5px;
+  }
+
+    .line-button img {
+    width: 35px;
+    }
+
+    .when-it-open {
+    bottom: -200px;
+  }
+
+  .line-recommend {
+    font-size: 14px;
+  }
+
+  .line-notice {
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+}
+</style>
+
+<script>
+{
+const lineNotice = document.getElementById('lineNotice');
+const lineBox = document.getElementById('linebox');
+
+const whenopen = function() {
+  lineBox.classList.remove('when-it-open');
+}
+
+const linepop = function() {
+  lineNotice.classList.remove('no_notice');
+}
+
+setTimeout(whenopen, 2000);
+setTimeout(linepop, 7000);
+
+lineBox.addEventListener('click', ()=> {
+  lineNotice.classList.add('no_notice');
+});
+
+
+}
+</script>

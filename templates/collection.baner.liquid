@@ -1,0 +1,7 @@
+<span class="summer">
+  {% for tag in product.tags %}
+    {% if tag cortains 'info_'%}
+      {{ tag | split: '_' | last }}<br>
+    {% endif %}
+  {% endfor%}
+

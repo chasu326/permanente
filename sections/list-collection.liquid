@@ -1,0 +1,70 @@
+ <div class="page-width page-width--flush-small">
+    <div class="grid-overflow-wrapper">
+      <div class="grid grid--uniform" data-aos="overflow__animation">
+
+        {% if section.settings.home_featured_products == blank or collections[section.settings.home_featured_products].empty? or collections[section.settings.home_featured_products].products_count == 0 %}
+
+          <div class="grid__item">
+            <div class="grid grid--uniform">
+              {%- for i in (1..product_limit) -%}
+                <div class="grid__item grid-product {{ grid_item_width }}" data-aos="row-of-{{ per_row }}">
+                  <div class="grid-product__content">
+                    <a href="{{ product.url | within: collection }}" class="grid-product__link">
+                      <div class="grid-product__image-mask">
+                        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                        <div class="image-wrap">{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                      </div>
+                      <div class="grid-product__meta">
+                        <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
+                        <div class="grid-product__price">$29</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+
+        {% else %}
+
+          {%- for product in collections[section.settings.home_featured_products].products limit: product_limit -%}
+            {%- render 'product-grid-item',
+              product: product,
+              collection: collection,
+              grid_item_width: grid_item_width,
+              per_row: per_row -%}
+          {%- endfor -%}
+
+          {% if section.settings.view_all %}
+
+            {% if section.settings.rows > 1 %}
+              <div class="grid__item small--hide text-center">
+                <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn">{{ 'collections.general.all_of_collection' | t }}</a>
+              </div>
+            {% endif %}
+
+            <div class="grid__item grid__item--view-all text-center {{ grid_item_width }} medium-up--hide">
+              <a href="{{ collections[section.settings.home_featured_products].url }}" class="grid-product__see-all">
+                {{ 'collections.general.view_all_products_html' | t: count: collection.products_count }}
+              </a>
+            </div>
+
+          {% endif %}
+
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "リストコレクション",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
